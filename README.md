@@ -1,4 +1,4 @@
-#**miRNA-Disease Association Lookup Tool*
+**miRNA-Disease Association Lookup Tool*
 
 **Overview**
 
