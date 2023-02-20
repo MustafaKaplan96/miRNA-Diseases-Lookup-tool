@@ -1,10 +1,10 @@
 # miRNA-Disease Association Lookup Tool
 
-**Overview**
+## **Overview**
 
 This is a command-line tool for analysing miRNA and disease data. The tool accepts a CSV file as input and provides a filtered dataframe based on the optional parameters of miRNA name, disease name, and confidence scores. The tool also provides error messages if the inputs are not found in the data or confidence scores are outside the expected range. Using the defined function wrap_cell(), the 'Disease' column values are wrapped to a width of 35 characters to fit the display.
 
-**Usage**
+## **Usage**
 
 The script can be run from the command line with the following parameters:
 
