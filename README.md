@@ -10,7 +10,7 @@ The script can be run from the command line with the following parameters:
 
 python script_name.py -f \<file_name\> -m \<mirna_name\> -d \<disease_name\> -s \<Confidence_score1\> -c \< Confidence_score2\>
 
-**Input Parameters**
+## **Input Parameters**
 
 -   file_name (required): The name of the csv file that you want to read. The file should contain columns 'miRNA', 'Gene', 'Confidence_score1', 'Disease', 'Confidence_score2'.
 -   mirna (optional): The name of the miRNA you want to search for in the data. The default value is an empty string.
@@ -18,13 +18,13 @@ python script_name.py -f \<file_name\> -m \<mirna_name\> -d \<disease_name\> -s 
 -   score1 (optional): The minimum Confidence_score1 value required to return a row. The default value is 80.
 -   score2 (optional): The minimum Confidence_score2 value required to return a row. The default value is 0.8.
 
-**Output**
+## **Output**
 
 The function returns a pandas dataframe containing the rows that match the input conditions. The dataframe has columns 'miRNA', 'Gene', 'Confidence_score1', 'Disease', 'Confidence_score2', and 'Number'. The 'Number' column is an index that starts from 1 to the length of the result data.
 
 If there are no rows that match the input conditions, the tool returns an empty dataframe. If the inputs are not found in the data or are outside the expected range, the tool returns warning messages.
 
-**Examples**
+## **Examples**
 
 **Example 1:** To search for a miRNA 'hsa-miR-17-5p' and a disease 'cancer' in the file 'data.csv', using the default values for confidence scores:
 
@@ -46,7 +46,7 @@ If there are no rows that match the input conditions, the tool returns an empty 
 
 *python lookup.py -f data.csv*
 
-**Error Handling**
+## **Error Handling**
 
 -   If the file specified in file_name is not found, the function returns an error message "Error: The file [file_name] does not exist."
 -   If the values of score1 and score2 are not within the range of 80 to 100 and 0.8 to 1, respectively, a warning message "Note: Confidence values are not within the range." is printed.
